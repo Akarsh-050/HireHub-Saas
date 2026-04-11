@@ -1,0 +1,17 @@
+# Ignore all dependency folders
+**/node_modules/
+
+# Ignore compiled output (from TypeScript)
+**/dist/
+**/build/
+
+# Ignore environment secrets (Neon DB strings, JWT keys)
+**/.env
+**/.env.local
+
+# Debug logs
+*.log
+npm-debug.log*
+
+# OS specific files
+.DS_Store
