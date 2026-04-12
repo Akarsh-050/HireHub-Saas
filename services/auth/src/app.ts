@@ -1,6 +1,6 @@
 import express from "express";
 import authRoutes from "./routes/auth.js";
-// import { connectKafka } from "./producer.js";
+import { connectKafka } from "./producer.js";
 // import cors from "cors";
 
  const app = express();
@@ -8,7 +8,7 @@ import authRoutes from "./routes/auth.js";
  app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
 
-// connectKafka();
+connectKafka();
 
 app.use("/api/auth", authRoutes);
 
