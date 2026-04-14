@@ -41,7 +41,8 @@ export const registerUser = TryCatch(async (req, res, next) => {
   } 
   
   else if (role === "jobseeker") {
-    const file = req.file;
+// Find line 44 and change it to:
+const file = (req as any).file;
 
     if (!file) {
       throw new ErrorHandler(400, "Resume file is required for jobseekers");
