@@ -1,6 +1,6 @@
 "use client";
 
-import { AppContextType, Application, AppProviderProps, User } from "@/type";
+import { AppContextType, Application, AppProviderProps, User } from "@/lib/type";
 import React, { createContext, useContext, useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Cookies from "js-cookie";
