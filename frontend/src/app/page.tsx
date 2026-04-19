@@ -1,11 +1,15 @@
 import React from 'react'
 import { Button  } from '@/components/ui/button'
+import Hero from '@/components/hero'
+import CarrerGuide from '@/components/carrer-guide'
+import ResumeAnalyzer from '@/components/resume-analyser'
 
 const Home = () => {
   return (
     <div>
-
-      <Button variant={"destructive"} > hli </Button> 
+      <Hero/>
+      <CarrerGuide/>
+      <ResumeAnalyzer/>
     </div>
   )
 }
