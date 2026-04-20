@@ -15,3 +15,36 @@ npm-debug.log*
 
 # OS specific files
 .DS_Store
+
+
+# Root-level ignores
+.DS_Store
+node_modules/
+
+# Frontend specific ignores (Next.js)
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
+
+# Next.js build output and testing
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/coverage/
+
+# Environment files and logs
+frontend/.env*
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# Vercel and TS
+frontend/.vercel
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
